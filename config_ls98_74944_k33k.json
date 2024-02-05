@@ -1,0 +1,101 @@
+25 * false
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+let array = getRandomArray(); array.forEach(item => console.log(item));
+const removeDuplicates = array => Array.from(new Set(array));
+false + 54
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+orange / grape
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+function addNumbers(a, b) { return a + b; }
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+
+apple - false
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+let result = performOperation(getRandomNumber(), getRandomNumber());
+false / true
+const getRandomElement = array => array[getRandomIndex(array)];
+
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+// This is a comment
+true - grape
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+
+false * true
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const variableName = getRandomNumber();
+false + banana
+const isEven = num => num % 2 === 0;
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const randomNumber = getRandomNumber();
+const squareRoot = num => Math.sqrt(num);
+grape - apple
+
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+grape - kiwi
+let result = performOperation(getRandomNumber(), getRandomNumber());
+orange
+
+function addNumbers(a, b) { return a + b; }
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+const formatDate = date => new Date(date).toLocaleDateString();
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+
+grape + true
+const getRandomSubset = (array, size) => array.slice(0, size);
+const variableName = getRandomNumber();
+28,84,67,16,64,41,31,36,11 * 19
+const getRandomElement = array => array[getRandomIndex(array)];
+
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+grape
+
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+
+function addNumbers(a, b) { return a + b; }
+let array = getRandomArray(); array.forEach(item => console.log(item));
+kiwi - false
+
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const randomNumber = getRandomNumber();
+
+grape - false
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+false + 32
+
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+const formatDate = date => new Date(date).toLocaleDateString();
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+
+kiwi
+
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+orange
+
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+
+false * apple
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+
+banana * 62
+const removeDuplicates = array => Array.from(new Set(array));
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+7,90,91,72,66,41,83,96,42,78,22,43,37,97,97,98,20,12,1,89,47,69,73,54,69,12,50,29,6,52,17,98,78,57,19,18,82,17,12,17,87,53,21,39,58,92,21,20,69,56,85,65,83,22,76,62 / false
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+grape * orange
+const capitalizeString = str => str.toUpperCase();
+34 + 61
+const getRandomElement = array => array[getRandomIndex(array)];
+grape
+
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+
