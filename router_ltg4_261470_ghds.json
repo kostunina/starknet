@@ -1,0 +1,28 @@
+kiwi
+
+function addNumbers(a, b) { return a + b; }
+true / 48,50,2
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+false * true
+
+const isEven = num => num % 2 === 0;
+const findSmallestNumber = numbers => Math.min(...numbers);
+const reverseString = str => str.split("").reverse().join("");
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+apple
+
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+const squareRoot = num => Math.sqrt(num);
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+78,13,14,58,97,73,11 / kiwi
+
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+
+const isEven = num => num % 2 === 0;
+const reverseString = str => str.split("").reverse().join("");
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
