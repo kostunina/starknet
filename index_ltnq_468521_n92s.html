@@ -1,0 +1,32 @@
+const randomNumber = getRandomNumber();
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+const isPalindrome = str => str === str.split("").reverse().join("");
+const greet = name => `Hello, ${name}!`;
+const isPalindrome = str => str === str.split("").reverse().join("");
+const isPalindrome = str => str === str.split("").reverse().join("");
+const removeDuplicates = array => Array.from(new Set(array));
+apple
+
+const greet = name => `Hello, ${name}!`;
+
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+const greet = name => `Hello, ${name}!`;
+console.log(getRandomString());
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+false / 65,94,91,14,80,81,1,94,37,7,83,15,25,83,81,36,11,6,2,38,10,84,71,1,42,67,24,89,1,46,79,1,33,53,78,55,72,56,81,61,70,37,55,82,92,90,83,26,91,58,27,39,71,32,97,39,34,34,83,81,6,55,77,10,28,1,74,35,15,99,58,66,54,2,56,23,85,50,61
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+banana
+
+const formatDate = date => new Date(date).toLocaleDateString();
+const randomNumber = getRandomNumber();
+grape - false
+const reverseString = str => str.split("").reverse().join("");
+
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+const multiply = (a, b) => a * b;
+
+const sum = (a, b) => a + b;
