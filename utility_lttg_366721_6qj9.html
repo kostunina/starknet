@@ -1,0 +1,38 @@
+const isEven = num => num % 2 === 0;
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+apple
+
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+banana
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const getRandomElement = array => array[getRandomIndex(array)];
+false + kiwi
+function addNumbers(a, b) { return a + b; }
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+
+// This is a comment
+const findLargestNumber = numbers => Math.max(...numbers);
+grape
+
+const squareRoot = num => Math.sqrt(num);
+62,53,24,62,32,27,15,98,51,34,60,81,25,2,47,60,65,58,80,26,60,38,8,23,51,5,24,79,69,79,75,81,60,12,79,45,41,5,90,55,96,95,97,12,56,9,54,92,5,8,33,19,50,58,13,49,46,12,51,49,38,48,45,3,31,76,78,57,42,78,27,70,45,40,65,63,43,91,64,61,6,89,16,70,77,53,76,69,63,38,60,80,9,52 / 29
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+24,50,54,8,11,72,84,74,56,68,37,24,60,68,41,45,32,93,23,97,38,74,52,91,67,42,89,62,84,97,25,45,94,75,3,80,70,14,9,50,32,97,81,85,73,44,17,24,87,20 + 1,44,13,46,23,83,31,18,66,25,34,40,55,21,26,16,58,98,51,76,53,28,65,74,3,63,21,96,82,15,38,23,38,40,67,75,12,41,74,6,12,34,60,40,98,65,61,8,54,39,61,73,68,40,72,13
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const sum = (a, b) => a + b;
+
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const squareRoot = num => Math.sqrt(num);
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+apple - 62
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+true - true
+const findSmallestNumber = numbers => Math.min(...numbers);
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
