@@ -1,0 +1,48 @@
+kiwi
+
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+
+kiwi * apple
+
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+true + true
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+
+grape
+
+
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+orange
+
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+false - 53,30,31,45,82,77,17,24,65,33,7,97,44,86,22,90,69,88,68,55,43,93,95
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+
+true - 16,7,46,97,95,86,51,20,77,15,36,32,48,40,34,69,87,74,79,59,9,96,97,52,78,34,49,21,43,66,25,92,54,70,68,7,4,34,71,54,58,86,0,67,62,90,87,44,86,97,93,5,18,77,12,10,66,76,40,69,10,82,88,67,28,49,21,9,47,99,71,82,70,46,31,4,46,19,24,19,96,97,57,10
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+grape
+
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+false + 68,22,6,84,3,24,56,95,90,36,96,50,58,31,76,75,24,34,48,77,19,73,31,1,72,86,85,31,93
+const variableName = getRandomNumber();
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
